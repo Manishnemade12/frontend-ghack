@@ -11,7 +11,7 @@ function Slogan() {
       const token = localStorage.getItem("token");
       if (!token) return;
 
-      const response = await fetch("http://localhost:3000/user/details", {
+      const response = await fetch("https://backend-ghack.onrender.com/user/details", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

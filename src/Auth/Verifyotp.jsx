@@ -22,7 +22,7 @@ const OtpInput = () => {
       try {
         const activationToken = localStorage.getItem("activationToken"); // Retrieve the token from localStorage
 
-        const response = await fetch("http://localhost:3000/verify", {
+        const response = await fetch("https://backend-ghack.onrender.com/verify", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

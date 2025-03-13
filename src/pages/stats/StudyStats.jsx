@@ -173,7 +173,7 @@ const StudyStats = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          `http://localhost:3000/timerstats?period=${view}`,
+          `https://backend-ghack.onrender.com/timerstats?period=${view}`,
           {
             method: "GET",
             headers: {

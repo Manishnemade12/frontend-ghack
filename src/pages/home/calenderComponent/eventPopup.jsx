@@ -14,7 +14,7 @@ const EventPopup = ({ date, onClose, refreshEvents }) => {
     const fetchEvent = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/events-by-date?date=${date}`
+          `https://backend-ghack.onrender.com/events-by-date?date=${date}`
         );
         const eventData = response.data.data[0]; // Assuming one event per date
         if (eventData) {
@@ -40,9 +40,9 @@ const EventPopup = ({ date, onClose, refreshEvents }) => {
     try {
       const eventData = { title, time, date };
       if (id) {
-        await axios.put(`http://localhost:3000/events/${id}`, eventData);
+        await axios.put(`https://backend-ghack.onrender.com/events/${id}`, eventData);
       } else {
-        await axios.post("http://localhost:3000/events", eventData);
+        await axios.post("https://backend-ghack.onrender.com/events", eventData);
       }
       refreshEvents();
       onClose();
@@ -54,7 +54,7 @@ const EventPopup = ({ date, onClose, refreshEvents }) => {
   const handleDelete = async () => {
     try {
       if (id) {
-        await axios.delete(`http://localhost:3000/events/${id}`);
+        await axios.delete(`https://backend-ghack.onrender.com/events/${id}`);
         refreshEvents();
         onClose();
       }

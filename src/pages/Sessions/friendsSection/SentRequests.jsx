@@ -12,7 +12,7 @@ function SentRequests({ onBack }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/friends/sent-requests", getAuthHeader())
+      .get("https://backend-ghack.onrender.com/friends/sent-requests", getAuthHeader())
       .then((response) => {
         setSentRequests(response.data);
       })

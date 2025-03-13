@@ -12,7 +12,7 @@ function FriendRequests() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/friends/requests", getAuthHeader())
+      .get("https://backend-ghack.onrender.com/friends/requests", getAuthHeader())
       .then((res) => {
         setRequests(res.data);
       })
@@ -22,7 +22,7 @@ function FriendRequests() {
   const handleAccept = (friendId) => {
     axios
       .post(
-        `http://localhost:3000/friends/accept/${friendId}`,
+        `https://backend-ghack.onrender.com/friends/accept/${friendId}`,
         null,
         getAuthHeader()
       )
@@ -36,7 +36,7 @@ function FriendRequests() {
   const handleReject = (friendId) => {
     axios
       .post(
-        `http://localhost:3000/friends/reject/${friendId}`,
+        `https://backend-ghack.onrender.com/friends/reject/${friendId}`,
         null,
         getAuthHeader()
       )

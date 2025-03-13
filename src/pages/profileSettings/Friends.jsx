@@ -18,7 +18,7 @@ const Friends = () => {
   const fetchFriends = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/friends",
+        "https://backend-ghack.onrender.com/friends",
         getAuthHeader()
       );
       // Add an `isRemoved` property to each friend (initially false)
@@ -36,7 +36,7 @@ const Friends = () => {
   const removeFriend = async (friendId) => {
     try {
       await axios.delete(
-        `http://localhost:3000/friends/${friendId}`,
+        `https://backend-ghack.onrender.com/friends/${friendId}`,
         getAuthHeader()
       );
       setFriends(

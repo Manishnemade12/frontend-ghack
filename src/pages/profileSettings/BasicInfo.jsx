@@ -100,7 +100,7 @@ export default function BasicInfo() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/user/upload-profile-picture",
+        "https://backend-ghack.onrender.com/user/upload-profile-picture",
         formData,
         {
           headers: {
@@ -153,7 +153,7 @@ export default function BasicInfo() {
       };
 
       const response = await axios.put(
-        "http://localhost:3000/user/profile",
+        "https://backend-ghack.onrender.com/user/profile",
         updateData,
         {
           headers: {

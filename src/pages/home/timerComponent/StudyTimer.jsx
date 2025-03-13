@@ -27,7 +27,7 @@ function StudyTimer() {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:3000/timer", {
+      const response = await fetch("https://backend-ghack.onrender.com/timer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -18,7 +18,7 @@ export const UserProfileProvider = ({ children }) => {
   const fetchUserDetails = async (userId) => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/user/details?id=${userId}`
+        `https://backend-ghack.onrender.com/user/details?id=${userId}`
       );
       const userData = response.data;
       setUser(userData);

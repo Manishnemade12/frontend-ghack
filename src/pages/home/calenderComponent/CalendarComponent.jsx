@@ -36,7 +36,7 @@ function Calendar() {
 
   const fetchEvents = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/events");
+      const response = await axios.get("https://backend-ghack.onrender.com/events");
       if (response.data.success) {
         setEvents(response.data.data);
 

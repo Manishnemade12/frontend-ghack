@@ -29,7 +29,7 @@ const Setgoals = ({ onGoalCreated }) => {
         ? deadline.toISOString()
         : new Date().toISOString();
       const { data } = await axios.post(
-        "http://localhost:3000/todo",
+        "https://backend-ghack.onrender.com/todo",
         {
           title,
           completed: false,

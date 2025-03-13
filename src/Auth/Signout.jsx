@@ -8,7 +8,7 @@ const Signout = () => {
   const handleSignOut = async () => {
     try {
       // Call the logout API
-      await axios.post("http://localhost:3000/logout", {}, { withCredentials: true });
+      await axios.post("https://backend-ghack.onrender.com/logout", {}, { withCredentials: true });
 
       // Clear the auth token after successful logout
       localStorage.removeItem("token");

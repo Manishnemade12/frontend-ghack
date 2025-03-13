@@ -205,7 +205,7 @@ const Ai = () => {
               <div className="flex flex-col items-center justify-center h-full">
                 <p className="text-lg font-medium text-center">
                   Hey! Welcome to{" "}
-                  <span style={{ color: "var(--btn)" }}>EduHaven AI</span>
+                  <span style={{ color: "var(--btn)" }}>EDTech AI</span>
                   <br />
                   How can I help you today?
                 </p>
@@ -246,7 +246,7 @@ const Ai = () => {
                 value={question}
                 onChange={(e) => setQuestion(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Ask Eduhaven AI..."
+                placeholder="Ask your question to  AI..."
                 className="w-full p-3 rounded-full outline-none bg-transparent focus:ring-2 focus:ring-transparent"
               />
             </div>

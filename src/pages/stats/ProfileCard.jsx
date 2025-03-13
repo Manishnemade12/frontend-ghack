@@ -27,7 +27,7 @@ const ProfileCard = () => {
 
         const decoded = jwtDecode(token);
         const response = await axios.get(
-          `http://localhost:3000/user/details?id=${decoded.id}`,
+          `https://backend-ghack.onrender.com/user/details?id=${decoded.id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

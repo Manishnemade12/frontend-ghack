@@ -3,7 +3,7 @@
 // import { Send } from "lucide-react";
 // import { motion } from "framer-motion";
 
-// const socket = io("http://localhost:3000"); 
+// const socket = io("https://backend-ghack.onrender.com"); 
 
 // const ChatRooms = () => {
 //   const [messages, setMessages] = useState([]);
@@ -86,7 +86,7 @@
 // import { Send } from "lucide-react";
 // import { motion } from "framer-motion";
 
-// const socket = io("http://localhost:3000");
+// const socket = io("https://backend-ghack.onrender.com");
 
 // const ChatRooms = () => {
 //   const [messages, setMessages] = useState([]);
@@ -182,7 +182,7 @@ import { io } from "socket.io-client";
 import { Send } from "lucide-react";
 import { motion } from "framer-motion";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://backend-ghack.onrender.com");
 
 const ChatRooms = () => {
   const [messages, setMessages] = useState([]);

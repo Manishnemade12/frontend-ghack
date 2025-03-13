@@ -18,8 +18,8 @@ const Authenticate = () => {
     console.log("Form submitted:", data);
     try {
       const url = isSignup
-        ? "http://localhost:3000/signup"
-        : "http://localhost:3000/login";
+        ? "https://backend-ghack.onrender.com/signup"
+        : "https://backend-ghack.onrender.com/login";
       if (isSignup) {
         if (!data.FirstName || !data.LastName) {
           throw new Error("First Name and Last Name are required");

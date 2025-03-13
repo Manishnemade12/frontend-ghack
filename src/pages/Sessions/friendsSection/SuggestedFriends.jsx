@@ -14,7 +14,7 @@ function SuggestedFriends({ onViewSentRequests }) {
   const sendRequest = async (friendId) => {
     try {
       const response = await axios.post(
-        `http://localhost:3000/friends/request/${friendId}`,
+        `https://backend-ghack.onrender.com/friends/request/${friendId}`,
         null,
         getAuthHeader()
       );
@@ -31,7 +31,7 @@ function SuggestedFriends({ onViewSentRequests }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/friends/friend-suggestions", getAuthHeader())
+      .get("https://backend-ghack.onrender.com/friends/friend-suggestions", getAuthHeader())
       .then((response) => {
         setSuggestedFriends(response.data);
       })

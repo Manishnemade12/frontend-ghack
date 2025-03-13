@@ -26,7 +26,7 @@ const GoalsComponent = () => {
   const fetchTodos = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/todo",
+        "https://backend-ghack.onrender.com/todo",
         getAuthHeader()
       );
       setTodos(sortTodos(data.data));
@@ -49,7 +49,7 @@ const GoalsComponent = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/todo/${id}`, getAuthHeader());
+      await axios.delete(`https://backend-ghack.onrender.com/todo/${id}`, getAuthHeader());
       setTodos(sortTodos(todos.filter((todo) => todo._id !== id)));
     } catch (error) {
       console.error("Error deleting todo:", error.message);
@@ -61,7 +61,7 @@ const GoalsComponent = () => {
       const todo = todos.find((t) => t._id === id);
       const updatedTodo = { ...todo, completed: !todo.completed };
       await axios.put(
-        `http://localhost:3000/todo/${id}`,
+        `https://backend-ghack.onrender.com/todo/${id}`,
         updatedTodo,
         getAuthHeader()
       );
@@ -82,7 +82,7 @@ const GoalsComponent = () => {
       const todo = todos.find((t) => t._id === editingId);
       const updatedTodo = { ...todo, title: editedTitle };
       await axios.put(
-        `http://localhost:3000/todo/${editingId}`,
+        `https://backend-ghack.onrender.com/todo/${editingId}`,
         updatedTodo,
         getAuthHeader()
       );

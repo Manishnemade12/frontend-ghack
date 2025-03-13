@@ -18,7 +18,7 @@
 //     const sessionData = { startTime, endTime, duration };
 
 //     try {
-//       const response = await fetch("http://localhost:3000/timer", {
+//       const response = await fetch("https://backend-ghack.onrender.com/timer", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -38,7 +38,7 @@
 //   const handleGetStats = async () => {
 //     try {
 //       const response = await fetch(
-//         `http://localhost:3000/timerstats?period=${period}`,
+//         `https://backend-ghack.onrender.com/timerstats?period=${period}`,
 //         {
 //           method: "GET",
 //           ...getAuthHeader(), // Add Authorization header

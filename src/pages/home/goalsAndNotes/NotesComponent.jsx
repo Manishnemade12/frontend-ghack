@@ -41,7 +41,7 @@ function NotesComponent() {
   const fetchNotes = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/note",
+        "https://backend-ghack.onrender.com/note",
         getAuthHeader()
       );
       if (response.data.success) {
@@ -97,7 +97,7 @@ function NotesComponent() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/note",
+        "https://backend-ghack.onrender.com/note",
         {
           title: notes[currentPage].title,
           content: notes[currentPage].content,
@@ -120,7 +120,7 @@ function NotesComponent() {
   const handleDeleteNote = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:3000/note/${id}`,
+        `https://backend-ghack.onrender.com/note/${id}`,
         getAuthHeader()
       );
       if (response.data.success) {
@@ -149,7 +149,7 @@ function NotesComponent() {
         handleSync();
         const noteId = notes[currentPage]._id;
         await axios.put(
-          `http://localhost:3000/note/${noteId}`,
+          `https://backend-ghack.onrender.com/note/${noteId}`,
           {
             content: updatedText,
           },
@@ -177,7 +177,7 @@ function NotesComponent() {
         handleSync();
         const noteId = notes[currentPage]._id;
         await axios.put(
-          `http://localhost:3000/note/${noteId}`,
+          `https://backend-ghack.onrender.com/note/${noteId}`,
           {
             title: updatedTitle,
           },
