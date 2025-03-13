@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  :root {
+    --bg-primary: #dfddec;
+    --bg-sec: #edecf2;
+    --bg-ter: #ffffff;
+    --txt: #1f2937;
+    --txt-dim: #525f70;
+    --txt-disabled: #888888;
+    --radius: 0.5rem;
+    --btn: #7f23ca;
+    --btn-hover: #8f30de;
+  }
+
+  .dark {
+    --bg-primary: #111827;
+    --bg-sec: #1f2937;
+    --bg-ter: #374151;
+    --txt: #d1d5db;
+    --txt-dim: #9ca3af;
+    --txt-disabled: #9097a2;
+    --radius: 0.5rem;
+    --btn: #6B21A8;
+    --btn-hover: #7a24c1;
+  }
+
+  /* classes for ease of use */
+  .bg-primary { background-color: var(--bg-primary)!important;}
+  .bg-sec { background-color: var(--bg-sec); }
+  .bg-ter { background-color: var(--bg-ter); }
+  .txt { color: var(--txt); }
+  .txt-dim { color: var(--txt-dim); }
+  .txt-disabled { color: var(--txt-disabled)!important;}
+  .btn { background-color: var(--btn);color:white; border-radius: var(--radius); 
+    &:hover { background-color: var(--btn-hover); }
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply transition-colors duration-200;
+    @apply bg-background text-foreground;
+  }
+}
+
+/* code below is only and only for tic-tac-toe. nothing else. ------------------------------------------------------*/
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-gray-900 text-white;
+}
+
+.board-cell {
+  @apply w-24 h-24 border-2 border-purple-500 flex items-center justify-center text-4xl font-bold cursor-pointer transition-all duration-200 bg-gray-800;
+}
+
+.board-cell:hover {
+  @apply bg-gray-700;
+}
+
+.winning-cell {
+  @apply bg-purple-900;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* scrollbar styling */
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 148, 148, 0.4);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(155, 154, 154, 0.6);
+  }
+}
