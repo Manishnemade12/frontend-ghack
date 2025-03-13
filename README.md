@@ -3,7 +3,8 @@
 ![EdTech Banner](https://your-image-link.com)  
 
 ## 🎥 Watch the Video Demo
-[![Watch the Video](https://img.shields.io/badge/Watch-Video-red?style=for-the-badge&logo=youtube)](https://www.linkedin.com/posts/manish-nemade-aaa69b28a_ghack1-edtech-hackathon-activity-7305828534692810753-an_5)
+[![Watch the Video](https://img.youtube.com/vi/RtdA__d7RsI/0.jpg)](https://youtu.be/RtdA__d7RsI)
+
 
 ## 📌 About EdTech
 **EdTech** is a powerful MERN stack-based platform designed to enhance learning productivity. Built as part of **G Hack** with my friends, this platform integrates smart tools to help students stay focused, collaborate with peers, and track their progress seamlessly.
