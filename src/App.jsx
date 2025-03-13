@@ -12,8 +12,8 @@ import ProjectInfo from "../src/pages/ProjectInfo";
 import StudyRoom from "./pages/Sessions/Sessions.jsx";
 import OtpInput from "./Auth/Verifyotp.jsx";
 import ChatRooms from "./pages/ChatRoom/Index";
-import Motivation from "./pages/motivation/Motivation.jsx";
-import ResultPage from "./pages/motivation/ResultPage";
+// import Motivation from "./pages/motivation/Motivation.jsx";
+// import ResultPage from "./pages/motivation/ResultPage";
 import Facedect from "./pages/facedect/facedect";
 import Meditation from "./pages/meditation/meditation";
 import Chatone from "./pages/chatone/chatone";
@@ -29,8 +29,8 @@ function App() {
           <Route path="games/*" element={<GameRoom />} />
           <Route path="course" element={<CourseRoom />} />
           <Route path="verify" element={<OtpInput />} />
-          <Route path="motivation" element={< Motivation  />} /> 
-          <Route path="result" element={< ResultPage  />} />  
+{/*           <Route path="motivation" element={< Motivation  />} /> 
+          <Route path="result" element={< ResultPage  />} />   */}
           <Route path="project-details" element={<ProjectInfo />} />  
           <Route path="profile/*" element={<ProfileRoutes />} />
           <Route path="authenticate" element={<SignUp />} />
