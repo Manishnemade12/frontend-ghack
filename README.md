@@ -1,14 +1,8 @@
 # EdTech - Your Ultimate Study Companion 🎓🚀
 
-![EdTech Banner](https://your-image-link.com)  
-
+![EdTech Banner](https://res.cloudinary.com/do0jgbkjz/image/upload/v1741873944/vbm-admin/file_1741873943558.png)
 ## 🎥 Watch the Video Demo
-<video width="600" controls>
-  <source src="https://manishnemade12.github.io/frontend-ghack/public/bandicam%202025-03-13%2010-39-10-611%20(online-video-cutter.com).mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
+<iframe width="600" height="340" src="https://www.youtube.com/embed/RtdA__d7RsI" frameborder="0" allowfullscreen></iframe>
 
 
 
