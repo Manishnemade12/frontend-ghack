@@ -31,7 +31,7 @@
 
 ## 🛠 Installation & Setup
 ```bash
-# Clone the repository
+# Clone the Frontend repository
 git clone https://github.com/Manishnemade12/frontend-ghack.git
 
 # Navigate to the project folder
@@ -40,13 +40,11 @@ cd EdTech
 # Install dependencies
 npm install
 
-# Start the backend server
-npm run server
-
 # Start the frontend
 yarn start  # or npm start
 ```
-
+##Backend Repository 
+(https://github.com/Manishnemade12/Backend-Ghack)
 ## 📬 Connect with Me
 📧 Email: [mnemade140@gmail.com](mailto:mnemade140@gmail.com)  
 💼 LinkedIn: [Manish Nemade](https://www.linkedin.com/in/manish-nemade-aaa69b28a/)  
