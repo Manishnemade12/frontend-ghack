@@ -4,7 +4,7 @@
 
 ## 🎥 Watch the Video Demo
 <video width="600" controls>
-  <source src="https://raw.githubusercontent.com/Manishnemade12/frontend-ghack/main/public/bandicam%202025-03-13%2010-39-10-611%20(online-video-cutter.com).mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Manishnemade12/frontend-ghack/public/bandicam%202025-03-13%2010-39-10-611%20(online-video-cutter.com).mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
