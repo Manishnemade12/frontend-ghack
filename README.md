@@ -1,8 +1,9 @@
 # EdTech - Your Ultimate Study Companion 🎓🚀
 
 ![EdTech Banner](https://res.cloudinary.com/do0jgbkjz/image/upload/v1741873944/vbm-admin/file_1741873943558.png)
+
 ## 🎥 Watch the Video Demo
-<iframe width="600" height="340" src="https://www.youtube.com/embed/RtdA__d7RsI" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="340" src="https://www.youtube.com/embed/RtdA__d7RsI"</iframe>
 
 
 
