@@ -50,7 +50,10 @@ yarn start  # or npm start
 💼 LinkedIn: [Manish Nemade](https://www.linkedin.com/in/manish-nemade-aaa69b28a/)  
 
 ---
-![GHack Certificate](https://res.cloudinary.com/do0jgbkjz/image/upload/v1741884642/vbm-admin/file_1741884642431.jpg)
+<p align="center">
+  <img src="https://res.cloudinary.com/do0jgbkjz/image/upload/v1741884642/vbm-admin/file_1741884642431.jpg" alt="My Image" width="400" style="transform: rotate(180deg);" />
+</p>
+
 
 
 Give this project a ⭐ if you found it helpful! Happy coding! 🚀
